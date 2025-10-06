@@ -1,0 +1,141 @@
+/* 2.combine selector
+  1.Descendant selector (space)
+  2.direct Child Selector (>)
+  3.adjacent sibling selector (+)
+  4.general sibling selector (~)
+*/
+
+#parent p{
+    background-color: red;
+}
+
+#parent>p{
+    color: blue;
+}
+
+#parent+p{
+    background-color: aqua;
+}
+
+#parent~ p{
+    color: brown;
+}
+
+
+/* 3.Attribute selector */
+
+h1[id="heading"]{
+    background-color: brown;
+}
+
+/* 4.Pesudo class selector
+   5.pesudo element selector */
+
+   /* Pesudo class selector
+      =>hover
+      =>active
+      =>focus
+      =>visited
+      =>first child
+      =>last child
+      =>nth child
+   */
+
+   #box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+   }
+
+   #box:hover{
+    background-color: red;
+   }
+
+   #box:active{
+    background-color: yellow;
+   }
+
+   input:focus{
+    background-color: green;
+   }
+
+   a:visited{
+        background-color: red;
+   }
+
+   ul li:first-child{
+    background-color: aquamarine;
+   }
+
+   ul li:last-child{
+    background-color: red;
+   }
+
+   /* an+b */
+   ul li:nth-child(n+3):nth-child(-n+5){
+    background-color: brown;
+   }
+
+   /* pseudo element selector
+      =>after
+      =>before
+      =>first line
+      =>first letter
+      =>selection
+   */
+
+   h2::after{
+    content: " of the about section";
+   }
+
+   h2::before{
+    content: "This";
+   }
+
+   #box::first-line{
+    background-color: blue;
+   }
+
+   #box::first-letter{
+    font-weight: bold;
+    font-size: 20px;
+   }
+
+   #box::selection{
+    background-color: chartreuse;
+   }
+
+
+   /* color
+     1. RGB(red(255) ,green.blue)
+     2.RGBA(red,green,blue,alpha)
+   */
+
+   h2{
+    color: rgb(255,255,100);
+   }
+
+   h3{
+    color: rgba(55,200,200,1);
+   }
+
+   h4{
+    color: #e80a0af1;
+   }
+
+
+   .box-model{
+    width: 200px;
+    /* border: 2px solid green; */
+
+    /* padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px; */
+
+    padding: 40px 30px 20px 10px;
+    border: 2px solid blue;
+    border-top: 20px solid;
+
+    margin: 0 20px;
+   }
