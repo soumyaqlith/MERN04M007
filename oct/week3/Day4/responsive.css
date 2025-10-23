@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 900px;
+    border: 1px solid black;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.header {
+    background-color: red;
+}
+
+.sidebar {
+    background-color: orange;
+}
+
+.content1 {
+    background-color: blueviolet;
+}
+
+.content2 {
+    background-color: brown;
+}
+
+.content3 {
+    background-color: chartreuse;
+}
+
+.footer {
+    background-color: crimson;
+}
+
+
+
+@media (width>=480px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 200px 200px 100px;
+    }
+    .header {
+        grid-column: 1/4;
+        background-color: red;
+    }
+
+    .sidebar {
+        grid-row: 2/4;
+        background-color: orange;
+    }
+
+    .content1 {
+        grid-column: 2/4;
+        background-color: blueviolet;
+    }
+
+    .content2 {
+        grid-column: 2/3;
+        background-color: brown;
+    }
+
+    .content3 {
+        grid-column: 3/4;
+        background-color: chartreuse;
+    }
+
+    .footer {
+        grid-column: 1/4;
+        background-color: crimson;
+    }
+
+   
+}
+
+
+/* @media (max-width:480px) {
+    body{
+        background-color: red;
+    }
+}
+
+@media (min-width:480px) and (max-width:760px) {
+    body{
+        background-color: blue;
+    }
+}
+
+@media (min-width:760px) and (max-width:1024px) {
+    body{
+        background-color: yellow;
+    }
+} */
+
+body{
+    height: 100vh;
+    background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg") no-repeat center  ;
+    background-size: cover;
+}
+.login-page{
+    width: 300px;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.login-page h1{
+    text-align: center;
+    color: white;
+}
+
+.login-item{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.login-item label{
+    color: seagreen;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px white;
+}
+.login-item input{
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid gray;
+    background-color: inherit;
+}
+
+.login-item input::placeholder{
+    color: white;
+}
+.login-item-button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 80%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    margin-top: 10px;
+
+}
+
+button:hover{
+    background-color: rgba(137, 43, 226, 0.612);
+}

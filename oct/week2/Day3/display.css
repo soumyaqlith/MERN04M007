@@ -1,0 +1,57 @@
+
+
+
+/* Units
+  px
+  vh
+  vw
+  %
+  em
+  rem
+*/
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    width: 1320px;
+    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  padding: 10px;
+
+}
+
+/* Gallery Items */
+.gallery-item {
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item:nth-child(1) , .gallery-item:nth-child(3){
+    grid-row: span 2;
+}
+.gallery-item:nth-child(5){
+    grid-row: span 2;
+}
+
+
+
+
