@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #000000eb;
+            position: relative;
+        }
+
+        .spotlight {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, red, blue);
+            position: absolute;
+            transform: translate(-50%,-50%);
+            transition: all 1s linear;
+            filter: blur(60px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spotlight"></div>
+
+
+    <button id="btn">click</button>
+    <input type="text">
+
+    <form action="">
+        <input type="text" placeholder="Enter your name" name="fullname">
+        <button>Submit</button>
+    </form>
+
+    <p>key event</p>
+
+    <script src="event.js"></script>
+</body>
+
+</html>
